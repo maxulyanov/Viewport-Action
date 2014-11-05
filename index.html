@@ -4,74 +4,81 @@
 <meta charset="UTF-8">
 <title>Viewport-Action</title>
 <link href="css/style.css" type="text/css" rel="stylesheet">
+<link href="css/effect.css" type="text/css" rel="stylesheet">
+<link href="css/font-awesome.css" type="text/css" rel="stylesheet">
 <script src="js/jquery-1.11.1.min.js"></script>
 <script src="js/jquery.viewportaction.js"></script>
 <script type="text/javascript">
 	$(function(){
-		$('#dinamic > div').viewportaction({
-			
+		$('.demo-eff-1').viewportaction({
+			effect: 'opacity',
+			customClass: 'my-class'
 		});
 	})
 </script>
 <style>
-	#static {
-		background: #f7f7f7;
-		height: 1000px;
-	}
-	#static > div{
-		border: 5px solid rgb(197, 197, 197);
-		width: 300px;
-		height: 300px;
-		float: left;
-		margin: 10px;
-		text-align: center;
-		font-size: 20px;
-		
-	}
-	
-	#dinamic{
-		background: #96EAED;
-		height: 1000px;
-	}
-	#dinamic > div{
-		border: 5px solid rgb(197, 197, 197);
-		width: 300px;
-		height: 300px;
-		float: left;
-		margin: 10px;
-		text-align: center;
-		font-size: 20px;
-		opacity: 0;
-		
-	}
-	
-	#dinamic > div.visible{
-		opacity: 1;
-		transition: 1s;
-	}
+
 </style>
 </head>
 <body>
-	<div id="static">
-		<div>
-			content static
-		</div>
-		<div>
-			content static
-		</div>
-		<div>
-			content static
+	<div class="row-line-1 row">
+		<div class="row-wrap">
+			<div class="w-33 demo-eff-1 view-action">
+				<i class="fa fa-cloud-download fa-5x"></i> 
+				<h2>Your Data in Cloud</h2>
+				<p>Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.</p>
+			</div>
+			<div class="w-33 demo-eff-1 view-action">
+				<i class="fa fa-calendar fa-5x"></i> 
+				<h2>Monthly Rewards</h2>
+				<p>Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.</p>
+			</div>
+			<div class="w-33 demo-eff-1 view-action">
+				<i class="fa fa-repeat fa-5x"></i> 
+				<h2>24/7 Support</h2>
+				<p>Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.</p>
+			</div>
+			<span class="clearfix">
 		</div>
 	</div>
-	<div id="dinamic">
-		<div>
-			content dinamic
+	<div class="row-line-1 row">
+		<div class="row-wrap">
+			<div class="w-33 demo-eff-1 view-action">
+				<i class="fa fa-cloud-download fa-5x"></i> 
+				<h2>Your Data in Cloud</h2>
+				<p>Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.</p>
+			</div>
+			<div class="w-33 demo-eff-1 view-action">
+				<i class="fa fa-calendar fa-5x"></i> 
+				<h2>Monthly Rewards</h2>
+				<p>Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.</p>
+			</div>
+			<div class="w-33 demo-eff-1 view-action">
+				<i class="fa fa-repeat fa-5x"></i> 
+				<h2>24/7 Support</h2>
+				<p>Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.</p>
+			</div>
+			<span class="clearfix">
 		</div>
-		<div>
-			content dinamic
-		</div>
-		<div>
-			content dinamic
+	</div>
+	<div class="row-line-1 row">
+		<div class="row-wrap">
+			<div class="w-33 demo-eff-1 view-action">
+				<i class="fa fa-cloud-download fa-5x"></i> 
+				<h2>Your Data in Cloud</h2>
+				<p>Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.</p>
+			</div>
+			<div class="w-33 demo-eff-1 view-action">
+				<i class="fa fa-calendar fa-5x"></i> 
+				<h2>Monthly Rewards</h2>
+				<p>Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.</p>
+			</div>
+			<div class="w-33 demo-eff-1 view-action">
+				<i class="fa fa-repeat fa-5x"></i> 
+				<h2>24/7 Support</h2>
+				<p>Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.</p>
+			</div>
+			<span class="clearfix">
 		</div>
 	</div>
 </body>

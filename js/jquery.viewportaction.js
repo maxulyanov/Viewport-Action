@@ -10,6 +10,7 @@
             effect: 'visible',
             offsetTop: 100,
             repeat: true,
+            customClass: false
         }, options);
 
         // Запомним this и высоту страницу
@@ -27,6 +28,9 @@
                 var obj = $(this),
                     objOpt = {};
                 $.extend(objOpt, options);
+
+                // Добавим кастомный класс
+                $(obj).addClass(objOpt.customClass);
 
                 // Если класс уже существует -  выход
                 if($(obj).hasClass(objOpt.effect) && !objOpt.repeat){
@@ -51,7 +55,7 @@
         
         };
 
-        // Запуск метода unitElem при загрузке и скролле страницы
+        // Запуск метода unitElem при загрузке или скролле страницы
         $(window).on('load scroll touchmove', this.unitElem);
         
         this.unitElem();

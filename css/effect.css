@@ -1,0 +1,33 @@
+/* Effect-1 - opacity */
+@-webkit-keyframes opacity {
+	0% {
+		opacity: 0;
+	}
+  	100% {
+  		opacity: 1;
+  	}
+}
+@keyframes opacity {
+	0% {
+		pacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.opacity {
+  	-webkit-animation-name: opacity;
+    animation-name: opacity;
+}
+
+
+
+
+/* General animate*/
+.view-action {
+	-webkit-animation-duration: 1s;
+    animation-duration: 1s;
+  	-webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    opacity: 0;
+}

@@ -25,3 +25,45 @@ a{
 }
 
 /*STYLE*/
+body {
+	font-family: Verdana, sans-serif;
+}
+.row-wrap {
+	width: 960px;
+	margin: 0 auto;
+	padding: 50px;
+}
+.row-wrap > div {
+	padding: 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.clearfix {
+	display: block;
+	clear: both;
+}
+.row-line-1 {
+	background: #222222;
+}
+.w-33 {
+	float: left;
+	width: 33%;
+}
+
+/*EFF-1*/
+.demo-eff-1 {
+	text-align: center;
+}
+.demo-eff-1 > h2 {
+	margin: 5px;
+	color: #008ed6;
+}
+.demo-eff-1 > p {
+	color: #c8c8c8;
+	line-height: 22px;
+	font-size: 14px;
+}
+.demo-eff-1 .fa {
+	color: #008ed6;
+}
