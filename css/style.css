@@ -28,6 +28,21 @@ a{
 body {
 	font-family: Verdana, sans-serif;
 }
+h2{
+	color: #FFF;
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+h2 span {
+	background: #008ed6;
+	color: white;
+	display: inline-block;
+	padding: 6px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
 .row-wrap {
 	width: 960px;
 	margin: 0 auto;
@@ -52,18 +67,37 @@ body {
 }
 
 /*EFF-1*/
-.demo-eff-1 {
+.row-line-1 {
 	text-align: center;
 }
-.demo-eff-1 > h2 {
+.row-line-1 h3 {
 	margin: 5px;
 	color: #008ed6;
 }
-.demo-eff-1 > p {
+.row-line-1 p {
 	color: #c8c8c8;
 	line-height: 22px;
 	font-size: 14px;
 }
-.demo-eff-1 .fa {
+.row-line-1 .fa {
 	color: #008ed6;
+}
+
+/* Уникальные настройки для кастомных классов */ 
+.view-action.my-class-1{
+	-webkit-animation-duration: 4s;
+    animation-duration: 4s;
+}
+
+.view-action.delay-1-eff-1-3 {
+	-webkit-animation-duration: 2s;
+    animation-duration: 2s;
+}
+.view-action.delay-2-eff-1-3 {
+	-webkit-animation-duration: 4s;
+    animation-duration: 4s;
+}
+.view-action.delay-3-eff-1-3 {
+	-webkit-animation-duration: 6s;
+    animation-duration: 6s;
 }
