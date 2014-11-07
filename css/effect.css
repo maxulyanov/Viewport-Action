@@ -1,5 +1,5 @@
-/* Effect-1 - opacity */
-@-webkit-keyframes opacity {
+/* Effect-1 - fade */
+@-webkit-keyframes fade {
 	0% {
 		opacity: 0;
 	}
@@ -7,7 +7,7 @@
   		opacity: 1;
   	}
 }
-@keyframes opacity {
+@keyframes fade {
 	0% {
 		pacity: 0;
 	}
@@ -15,9 +15,9 @@
 		opacity: 1;
 	}
 }
-.opacity {
-  	-webkit-animation-name: opacity;
-    animation-name: opacity;
+.fade {
+  	-webkit-animation-name: fade;
+    animation-name: fade;
 }
 
 

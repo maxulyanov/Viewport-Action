@@ -27,6 +27,7 @@ a{
 /*STYLE*/
 body {
 	font-family: Verdana, sans-serif;
+	height: 100%;
 }
 h2{
 	color: #FFF;
@@ -42,6 +43,9 @@ h2 span {
 	-moz-border-radius: 5px;
 	-webkit-border-radius: 5px;
 	border-radius: 5px;
+}
+.wrapper {
+	height: 100%;
 }
 .row-wrap {
 	width: 960px;
@@ -90,14 +94,14 @@ h2 span {
 }
 
 .view-action.delay-1-eff-1-3 {
+	-webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+.view-action.delay-2-eff-1-3 {
 	-webkit-animation-duration: 2s;
     animation-duration: 2s;
 }
-.view-action.delay-2-eff-1-3 {
-	-webkit-animation-duration: 4s;
-    animation-duration: 4s;
-}
 .view-action.delay-3-eff-1-3 {
-	-webkit-animation-duration: 6s;
-    animation-duration: 6s;
+	-webkit-animation-duration: 3s;
+    animation-duration: 3s;
 }
