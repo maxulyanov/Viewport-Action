@@ -12,6 +12,7 @@
             repeat: true,
             customClass: false,
             oneRowViewport: false,
+            viewportNav: true,
             scrollSpeed: 400
         }, options);
 
@@ -58,6 +59,25 @@
                 // Блоки на высоту экрана
                 if(objOpt.oneRowViewport) {
                     $(this).height(windowHeight);
+                    var dataNav = $(this).attr('data-nav-viewport');
+
+                    // Навигация по слоям
+                    if(dataNav && options.viewportNav) {
+
+                        if(!$('.nav-viewport')[0]) {
+                            var dataNavArr = $(body).find('*[data-nav-viewport="true"]');
+                            var dataNavArrLen = dataNavArr.length;
+                            var DataNav = $('<nav class="nav-viewport"></nav>');
+
+
+                            for(var i = 0; i < dataNavArrLen; i++) {
+                                var titleNav  = $(dataNavArr[i]).attr('data-nav-viewport-title');
+                                $(DataNav).append('<a class="data-nav-a" data-nav-elem-id=' + '"' + i + '"' +  'href="#">' + titleNav + '</a>');
+                            }
+
+                            $(body).append(DataNav);
+                        }
+                    }
                 }
             });
         
@@ -65,7 +85,7 @@
 
         // функция определения в какую сторону был скролл
         var onMouseWheel = function(event) {
-
+            console.log('1');
             event = event.originalEvent;
             var delta = event.wheelDelta > 0 || event.detail < 0 ? 1 : -1;
             var top = $(this).scrollTop();
@@ -90,6 +110,18 @@
             }
         };
 
+        // Функция навигации по блокам
+        var navScroll = function(event) {
+            event.preventDefault();
+
+            var elemId = $(this).attr('data-nav-elem-id')
+            $(body).stop().animate({
+                    scrollTop: elemId * windowHeight
+                }, options.scrollSpeed);
+            
+            return false;
+        }
+
         /***
             Обработка событий
         ***/
@@ -104,6 +136,8 @@
 
         // Запуск функции при движении колеса мыши
         $(body).on('mousewheel DOMMouseScroll', onMouseWheel);
+
+        $(document).on('click','.data-nav-a', navScroll);
         
         this.unitElem();
         

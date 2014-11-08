@@ -20,6 +20,34 @@
     animation-name: fade;
 }
 
+/* Effect-2 - fadeTop */
+@-webkit-keyframes fadeTop {
+	0% {
+   		opacity: 0;
+    	-webkit-transform: translate3d(0, -30%, 0);
+    	transform: translate3d(0, -30%, 0);
+	}
+	100% {
+    	opacity: 1;
+  	}
+}
+
+@keyframes fadeTop {
+	0% {
+   		opacity: 0;
+    	-webkit-transform: translate3d(0, -30%, 0);
+    	transform: translate3d(0, -30%, 0);
+	}
+	100% {
+    	opacity: 1;
+  	}
+}
+
+.fadeTop {
+	-webkit-animation-name: fadeTop;
+	animation-name: fadeTop;
+}
+
 
 
 

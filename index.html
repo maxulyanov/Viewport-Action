@@ -19,7 +19,7 @@
 			customClass: 'my-class-1'
 		});
 		$('.demo-eff-1-3').viewportaction({
-			effect: 'fade',
+			effect: 'fadeTop',
 		});
 
 		// Делим экран на блоки
@@ -30,34 +30,31 @@
 </script>
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js" type="text/javascript" charset="utf-8"></script>
 </script>
-<style>
-
-</style>
 </head>
 <body>
 <div class="wrapper">
-	<div class="row-line-1 row">
+	<div class="row-line-1 row" data-nav-viewport="true" data-nav-viewport-title="Раз">
 		<div class="row-wrap">
 			<h2>Стандартное применение эффекта <span>fade</span> </h2>
 			<div class="w-33 demo-eff-1-1 view-action">
 				<i class="fa fa-cloud-download fa-5x"></i> 
-				<h3>Your Data in Cloud</h3>
+				<h3>Ваши данные в облаке</h3>
 				<p>Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.</p>
 			</div>
 			<div class="w-33 demo-eff-1-1 view-action">
 				<i class="fa fa-calendar fa-5x"></i> 
-				<h3>Monthly Rewards</h3>
+				<h3>Ежемесячные бонусы</h3>
 				<p>Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.</p>
 			</div>
 			<div class="w-33 demo-eff-1-1 view-action">
 				<i class="fa fa-repeat fa-5x"></i> 
-				<h3>24/7 Support</h3>
+				<h3>24/7 Поддержка</h3>
 				<p>Fruitful Fruit hath, fruitful said him created bring set, behold darkness Shall lights deep fish seasons itself given likeness upon bring fill their their whose. Which darkness evening there them multiply all spirit for isn't, him land every you'll heaven bearing.</p>
 			</div>
 			<span class="clearfix">
 		</div>
 	</div>
-	<div class="row-line-1 row">
+	<div class="row-line-1 row" data-nav-viewport="true" data-nav-viewport-title="Два">
 		<div class="row-wrap">
 			<h2>Применение эффекта <span>fade</span> с задержкой 4s с помощью пользовательского класса</h2>
 			<div class="w-33 demo-eff-1-2 view-action">
@@ -78,7 +75,7 @@
 			<span class="clearfix">
 		</div>
 	</div>
-	<div class="row-line-1 row">
+	<div class="row-line-1 row" data-nav-viewport="true" data-nav-viewport-title="Три">
 		<div class="row-wrap">
 			<h2>Применение эффекта <span>fade</span> с задержкой для каждого элемента</h2>
 			<div class="w-33 demo-eff-1-3 view-action delay-1-eff-1-3">
@@ -99,11 +96,12 @@
 			<span class="clearfix">
 		</div>
 	</div>
-	<script>
-		$(function() {
-			$('.row:even').css({'background': '#131313', 'border-bottom': '5px solid #101010'});
-		});
-	</script>
+	<a href="#" class="fork-git"></a>
 </div>
+<script>
+	$(function() {
+		$('.row:even').css({'background': '#131313'});
+	});
+</script>
 </body>
 </html>
